@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 0;
-  padding: 1rem;
+  padding: 0;
 }
 
 header {
@@ -30,7 +30,7 @@ header {
     "img img";
   grid-gap: 1rem;
   margin: 0;
-  padding: 0;
+  padding: .5em 1em .6em;
 }
 
 img {
@@ -83,6 +83,68 @@ header img {
   grid-column: 1 / -1;
 }
 
+main {
+  padding: .5em 1em .6em;
+  margin: 0;
+}
+
 #title {
   max-width: 30em;
+  margin: auto;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-top: .2rem solid #e2e2e2;
+  border-bottom: .2rem solid #e2e2e2;
+}
+
+h3 span {
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 span {
+  font-size: 1.125rem;
+}
+
+article p {
+  flex-grow: 1;
+}
+
+article a {
+  padding: .5em 1em .6em;
+  color: #3783a3;
+  text-decoration: none;
+  border: .2rem solid #3783a3;
+  border-radius: .3rem;
+}
+
+footer p {
+  text-align: center;
+  padding: 1rem;
+  border-top: .2rem solid #e2e2e2;
 }
