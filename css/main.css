@@ -19,9 +19,70 @@ html {
 
 body {
   margin: 0;
+  padding: 1rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "h1 nav"
+    "img img";
+  grid-gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 img {
   display: block;
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  grid-area: "h1";
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 span {
+  font-size: 1.5rem;
+}
+
+nav {
+  grid-area: "nav";
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+  padding: .5rem;
+}
+
+nav ul li a {
+  color: #3783a3;
+  font-size: 1.125rem;
+}
+
+header img {
+  grid-area: "img";
+  grid-column: 1 / -1;
+}
+
+#title {
+  max-width: 30em;
 }
