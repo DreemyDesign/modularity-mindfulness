@@ -26,7 +26,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "h1 nav"
+    "logo nav"
     "img img";
   grid-gap: 1rem;
   margin: 0;
@@ -41,7 +41,7 @@ img {
 }
 
 h1 {
-  grid-area: "h1";
+  grid-area: logo;
   display: flex;
   flex-direction: column;
   font-size: 2rem;
@@ -54,7 +54,7 @@ h1 span {
 }
 
 nav {
-  grid-area: "nav";
+  grid-area: nav;
   margin: 0;
   padding: 0;
 }
@@ -81,8 +81,7 @@ nav ul li a {
 }
 
 header img {
-  grid-area: "img";
-  grid-column: 1 / -1;
+  grid-area: img;
 }
 
 main {
@@ -95,7 +94,7 @@ main {
   margin: auto;
 }
 
-h3 {
+h2 {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
@@ -106,7 +105,7 @@ h3 {
   border-bottom: .2rem solid #e2e2e2;
 }
 
-h3 span {
+h2 span {
   font-size: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -123,13 +122,13 @@ article {
   flex-direction: column;
 }
 
-h2{
+h3{
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 
-h2 span {
+h3 span {
   font-size: 1.125rem;
 }
 
