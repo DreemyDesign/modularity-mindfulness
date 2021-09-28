@@ -96,7 +96,7 @@ main {
 
 h2 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: normal;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -122,7 +122,7 @@ article {
   flex-direction: column;
 }
 
-h3{
+h3 {
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -148,4 +148,27 @@ footer p {
   text-align: center;
   padding: 1rem;
   border-top: .2rem solid #e2e2e2;
+}
+
+@media only screen and (max-width: 38em) {
+  header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "nav"
+      "img";
+    grid-gap: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+  }
 }
