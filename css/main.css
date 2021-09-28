@@ -29,7 +29,7 @@ header {
     "logo"
     "nav"
     "img";
-  grid-gap: 1rem;
+  grid-gap: 0;
   margin: 0;
   padding: .5em 1em .6em;
 }
@@ -52,7 +52,7 @@ h1 {
 }
 
 h1 span {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 nav {
@@ -67,7 +67,7 @@ nav ul {
   list-style-type: none;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
 }
@@ -79,7 +79,7 @@ nav ul li {
 
 nav ul li a {
   color: #3783a3;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
 
 header img {
@@ -159,14 +159,24 @@ footer p {
     grid-template-areas:
       "logo nav"
       "img img";
+    grid-gap: 1rem;
   }
 
   h1 {
     text-align: left;
   }
 
+  h1 span {
+    font-size: 1.5rem;
+  }
+
   nav ul {
     justify-content: flex-end;
+    height: 100%;
+  }
+
+  nav ul li a {
+    font-size: 1.125rem;
   }
 
   section {
