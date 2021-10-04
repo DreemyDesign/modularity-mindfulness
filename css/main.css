@@ -94,17 +94,17 @@ main {
 #title {
   max-width: 30em;
   margin: auto;
+  padding: 1rem;
+  border-bottom: .2rem solid #e2e2e2;
+  border-top: .2rem solid #e2e2e2;
+  text-align: center;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: normal;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  border-top: .2rem solid #e2e2e2;
-  border-bottom: .2rem solid #e2e2e2;
 }
 
 h2 span {
