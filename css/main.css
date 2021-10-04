@@ -116,6 +116,7 @@ h2 span {
 section {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
 
@@ -164,10 +165,6 @@ footer p {
 
   h1 {
     text-align: left;
-  }
-
-  h1 span {
-    font-size: 1.5rem;
   }
 
   nav ul {
